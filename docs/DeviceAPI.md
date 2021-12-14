@@ -37,7 +37,7 @@ Create new device
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
 import ForestVPNAPI
 
-let createOrUpdateDeviceRequest = CreateOrUpdateDeviceRequest(externalKey: "externalKey_example", name: "name_example", locations: [123], location: 123, torOver: false, connectionMode: 123, randomServer: false, info: CreateOrUpdateDeviceRequest_info(type: "type_example", info: "TODO")) // CreateOrUpdateDeviceRequest |  (optional)
+let createOrUpdateDeviceRequest = CreateOrUpdateDeviceRequest(externalKey: "externalKey_example", name: "name_example", location: 123, torOver: false, connectionMode: 123, randomServer: false, info: CreateOrUpdateDeviceRequest_info(type: "type_example", info: "TODO")) // CreateOrUpdateDeviceRequest |  (optional)
 
 // Create new device
 DeviceAPI.createDevice(createOrUpdateDeviceRequest: createOrUpdateDeviceRequest) { (response, error) in
@@ -818,7 +818,7 @@ Update device properties
 import ForestVPNAPI
 
 let deviceID = 987 // UUID | 
-let createOrUpdateDeviceRequest = CreateOrUpdateDeviceRequest(externalKey: "externalKey_example", name: "name_example", locations: [123], location: 123, torOver: false, connectionMode: 123, randomServer: false, info: CreateOrUpdateDeviceRequest_info(type: "type_example", info: "TODO")) // CreateOrUpdateDeviceRequest | 
+let createOrUpdateDeviceRequest = CreateOrUpdateDeviceRequest(externalKey: "externalKey_example", name: "name_example", location: 123, torOver: false, connectionMode: 123, randomServer: false, info: CreateOrUpdateDeviceRequest_info(type: "type_example", info: "TODO")) // CreateOrUpdateDeviceRequest | 
 
 // Update device properties
 DeviceAPI.updateDevice(deviceID: deviceID, createOrUpdateDeviceRequest: createOrUpdateDeviceRequest) { (response, error) in

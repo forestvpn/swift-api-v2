@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **torOver** | **Bool** |  | [optional] [default to false]
 **connectionMode** | [**ConnectionMode**](ConnectionMode.md) |  | [optional] 
 **wireguard** | [**WireGuard**](WireGuard.md) |  | [optional] 
-**locations** | [Location] |  | [optional] 
 **location** | [**Location**](Location.md) |  | [optional] 
 **servers** | [Server] |  | [optional] 
 **lastActiveAt** | **Date** |  | [optional] 

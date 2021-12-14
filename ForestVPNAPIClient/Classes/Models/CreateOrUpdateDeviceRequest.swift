@@ -14,18 +14,15 @@ public struct CreateOrUpdateDeviceRequest: Codable, Hashable {
 
     public var externalKey: String?
     public var name: String?
-    @available(*, deprecated, message: "This property is deprecated.")
-    public var locations: [UUID]?
     public var location: UUID?
     public var torOver: Bool? = false
     public var connectionMode: UUID?
     public var randomServer: Bool? = false
     public var info: CreateOrUpdateDeviceRequestInfo?
 
-    public init(externalKey: String? = nil, name: String? = nil, locations: [UUID]? = nil, location: UUID? = nil, torOver: Bool? = false, connectionMode: UUID? = nil, randomServer: Bool? = false, info: CreateOrUpdateDeviceRequestInfo? = nil) {
+    public init(externalKey: String? = nil, name: String? = nil, location: UUID? = nil, torOver: Bool? = false, connectionMode: UUID? = nil, randomServer: Bool? = false, info: CreateOrUpdateDeviceRequestInfo? = nil) {
         self.externalKey = externalKey
         self.name = name
-        self.locations = locations
         self.location = location
         self.torOver = torOver
         self.connectionMode = connectionMode
@@ -36,7 +33,6 @@ public struct CreateOrUpdateDeviceRequest: Codable, Hashable {
     public enum CodingKeys: String, CodingKey, CaseIterable {
         case externalKey = "external_key"
         case name
-        case locations
         case location
         case torOver = "tor_over"
         case connectionMode = "connection_mode"
@@ -50,7 +46,6 @@ public struct CreateOrUpdateDeviceRequest: Codable, Hashable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encodeIfPresent(externalKey, forKey: .externalKey)
         try container.encodeIfPresent(name, forKey: .name)
-        try container.encodeIfPresent(locations, forKey: .locations)
         try container.encodeIfPresent(location, forKey: .location)
         try container.encodeIfPresent(torOver, forKey: .torOver)
         try container.encodeIfPresent(connectionMode, forKey: .connectionMode)

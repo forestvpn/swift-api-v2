@@ -1,6 +1,5 @@
 .gitignore
 Cartfile
-ForestVPNAPI.podspec
 ForestVPNAPIClient/Classes/APIHelper.swift
 ForestVPNAPIClient/Classes/APIs.swift
 ForestVPNAPIClient/Classes/APIs/AppleAPI.swift

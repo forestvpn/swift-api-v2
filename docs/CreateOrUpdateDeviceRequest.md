@@ -5,7 +5,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **externalKey** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
-**locations** | **[UUID]** |  | [optional] 
 **location** | **UUID** |  | [optional] 
 **torOver** | **Bool** |  | [optional] [default to false]
 **connectionMode** | **UUID** |  | [optional] 

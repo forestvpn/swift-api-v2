@@ -20,13 +20,11 @@ public struct Device: Codable, Hashable {
     public var torOver: Bool? = false
     public var connectionMode: ConnectionMode?
     public var wireguard: WireGuard?
-    @available(*, deprecated, message: "This property is deprecated.")
-    public var locations: [Location]?
     public var location: Location?
     public var servers: [Server]?
     public var lastActiveAt: Date?
 
-    public init(id: UUID, externalKey: String? = nil, name: String? = nil, ips: [String]? = nil, dns: [String]? = nil, torOver: Bool? = false, connectionMode: ConnectionMode? = nil, wireguard: WireGuard? = nil, locations: [Location]? = nil, location: Location? = nil, servers: [Server]? = nil, lastActiveAt: Date? = nil) {
+    public init(id: UUID, externalKey: String? = nil, name: String? = nil, ips: [String]? = nil, dns: [String]? = nil, torOver: Bool? = false, connectionMode: ConnectionMode? = nil, wireguard: WireGuard? = nil, location: Location? = nil, servers: [Server]? = nil, lastActiveAt: Date? = nil) {
         self.id = id
         self.externalKey = externalKey
         self.name = name
@@ -35,7 +33,6 @@ public struct Device: Codable, Hashable {
         self.torOver = torOver
         self.connectionMode = connectionMode
         self.wireguard = wireguard
-        self.locations = locations
         self.location = location
         self.servers = servers
         self.lastActiveAt = lastActiveAt
@@ -50,7 +47,6 @@ public struct Device: Codable, Hashable {
         case torOver = "tor_over"
         case connectionMode = "connection_mode"
         case wireguard
-        case locations
         case location
         case servers
         case lastActiveAt = "last_active_at"
@@ -68,7 +64,6 @@ public struct Device: Codable, Hashable {
         try container.encodeIfPresent(torOver, forKey: .torOver)
         try container.encodeIfPresent(connectionMode, forKey: .connectionMode)
         try container.encodeIfPresent(wireguard, forKey: .wireguard)
-        try container.encodeIfPresent(locations, forKey: .locations)
         try container.encodeIfPresent(location, forKey: .location)
         try container.encodeIfPresent(servers, forKey: .servers)
         try container.encodeIfPresent(lastActiveAt, forKey: .lastActiveAt)
