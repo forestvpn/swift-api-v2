@@ -4,9 +4,9 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '3.0'
-  s.version = '2.0.0'
+  s.version = '2.0.1'
   s.swift_versions = '5.0'
-  s.source = { :git => 'https://github.com/forestvpn/swift-api-v2.git', :tag => '2.0.0' }
+  s.source = { :git => 'https://github.com/forestvpn/swift-api-v2.git', :tag => '2.0.1' }
   s.authors = { 'Forest VPN' => 'support@forestvpn.com' }
   s.license = { :type => 'MIT' }
   s.homepage = 'https://forestvpn.com/'
@@ -15,5 +15,4 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://forestvpn.com/api/docs/'
   s.source_files = 'ForestVPNAPIClient/Classes/**/*.swift'
   s.dependency 'AnyCodable-FlightSchool', '~> 0.6.1'
-  s.dependency 'Alamofire', '~> 5.4.3'
 end

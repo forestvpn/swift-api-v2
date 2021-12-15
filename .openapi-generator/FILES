@@ -1,5 +1,6 @@
 .gitignore
 Cartfile
+ForestVPNAPI.podspec
 ForestVPNAPIClient/Classes/APIHelper.swift
 ForestVPNAPIClient/Classes/APIs.swift
 ForestVPNAPIClient/Classes/APIs/AppleAPI.swift
@@ -11,7 +12,6 @@ ForestVPNAPIClient/Classes/APIs/FriendshipAPI.swift
 ForestVPNAPIClient/Classes/APIs/GeoAPI.swift
 ForestVPNAPIClient/Classes/APIs/GoogleAPI.swift
 ForestVPNAPIClient/Classes/APIs/WireguardAPI.swift
-ForestVPNAPIClient/Classes/AlamofireImplementations.swift
 ForestVPNAPIClient/Classes/CodableHelper.swift
 ForestVPNAPIClient/Classes/Configuration.swift
 ForestVPNAPIClient/Classes/Extensions.swift
@@ -49,6 +49,7 @@ ForestVPNAPIClient/Classes/Models/WireGuardPeerInfo.swift
 ForestVPNAPIClient/Classes/Models/WireGuardPeerUser.swift
 ForestVPNAPIClient/Classes/OpenISO8601DateFormatter.swift
 ForestVPNAPIClient/Classes/SynchronizedDictionary.swift
+ForestVPNAPIClient/Classes/URLSessionImplementations.swift
 Package.swift
 README.md
 docs/AppStoreReceiptVerificationRequest.md
