@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://forestvpn.com/'
   s.summary = 'ForestVPNAPI Swift SDK'
   s.description = 'Forest VPN API Client: manage VPN profiles and more...'
-  s.documentation_url = 'https://forestvpn.com/api/docs/'
+  s.documentation_url = 'https://forestvpn.com/'
   s.source_files = 'ForestVPNAPIClient/Classes/**/*.swift'
   s.dependency 'AnyCodable-FlightSchool', '~> 0.6.1'
 end
